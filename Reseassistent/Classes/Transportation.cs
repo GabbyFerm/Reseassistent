@@ -6,38 +6,34 @@
         //hur lång tid det tar mellan stad till stad 
         //Vad kostar resan mellan städer 
 
-       //vi kommer skapa traveltime metod, travelcost() och traveldistance()
+        //vi kommer skapa traveltime metod, travelcost() och traveldistance()
 
-
-        public int distance {  get; set; }
+        public int distance { get; set; }
         public int time { get; set; }
         public int cost { get; set; }
-        public Travelmetod Travelmetod { get; set; }
-       
+        public Travelmethod TravelMethod { get; set; }
 
-        public Transportation (int distance, int time, int cost)
+
+        public Transportation(int distance, int time, int cost, Travelmethod travelMethod)
         {
             this.distance = distance;
             this.time = time;
             this.cost = cost;
+            TravelMethod = travelMethod;
 
         }
 
         public void DisplayDetails()
         {
-            var option = Transportation.FirstorDefault(option => option.TravelMetod.Equals(travelmetod, stringComparision.OrdinalIgnoreCase));
-            if (option != null)
-            {
-                Console.WriteLine($"Fordonsalternativ{option.TravelMetod}");
-                Console.WriteLine($"Distans: {option.Distance}");
-                Console.WriteLine($"Tid: {option.Time}");
-                Console.WriteLine($"Kostnad: {option.Cost}");
-            }
-            else
-            {
-                Console.WriteLine($"Ingen information tillgänglig.");
+            Console.WriteLine($"Fordonsalternativ: {TravelMethod}");
+            Console.WriteLine($"Distans: {distance} km");
+            Console.WriteLine($"Tid: {time} minuter");
+            Console.WriteLine($"Kostnad: {cost} SEK");
+        }
 
-            }
+        public void TravelOption()
+        {
+            Console.WriteLine($"Resan med {TravelMethod} är {distance} km långt");
         }
       
 

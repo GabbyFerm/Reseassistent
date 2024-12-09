@@ -1,6 +1,6 @@
 ﻿namespace Reseassistent.Classes
 {
-    public class Travelmetod
+    public class Travelmethod
     {
         public string Car { get; set; }
 
