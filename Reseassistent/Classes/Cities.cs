@@ -2,11 +2,16 @@
 {
     public class Cities
     {
-        public string City { get; set; }  
+        public string Name { get; set; }
 
-        public Cities() 
-        { 
-            
+        public Cities(string name)
+        {
+            Name = name;
+        }
+
+        public void DepartureCity(TravelDB travelDB)
+        {
+           
         }
     }
 }

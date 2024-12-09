@@ -1,34 +1,39 @@
-﻿using System.Text.Json;
+﻿using Newtonsoft.Json;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Reseassistent.Classes
 {
     public class TravelDB
     {
-        public List<Cities> Cities { get; set; } = new List<Cities>();
+        public List<TravelCity> Cities { get; set; }
 
-        private readonly string _filePath;
-
-        public TravelDB(string filePath)
+        // Konstruktor för att ladda data från JSON-filen
+        public TravelDB()
         {
-            _filePath = filePath;
-
-            LoadData();
+            Cities = LoadCitiesFromJson();
         }
 
-        public void LoadData()
+        // Metod för att läsa och deserialisera JSON-filen
+        private List<TravelCity> LoadCitiesFromJson()
         {
-            if (File.Exists(_filePath))
+            try
             {
-                string json = File.ReadAllText(_filePath);
-                Cities = JsonSerializer.Deserialize<List<Cities>>(json) ?? new List<Cities>();
+                // Ange sökvägen till JSON-filen
+                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Json", "travel_data.json");
+
+                // Läs filen och deserialisera den till en lista av TravelCity
+                string json = File.ReadAllText(filePath);
+                var travelData = JsonConvert.DeserializeObject<Dictionary<string, List<TravelCity>>>(json);
+
+                return travelData["cities"];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Fel vid inläsning av JSON-fil: {ex.Message}");
+                return new List<TravelCity>();
             }
         }
 
-        public void SaveData()
-        {
-            string json = JsonSerializer.Serialize(Cities, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_filePath, json);
-        }
     }
 }
