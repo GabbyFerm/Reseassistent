@@ -11,11 +11,60 @@
           "travelMethod": "car"
         },
         {
-          "destination": "Helsingfors",
+          "destination": "Oslo",
+          "distance": 550,
+          "time": 480,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 525,
+          "time": 60,
+          "cost": 1500,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 525,
+          "time": 420,
+          "cost": 900,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Helsinki",
           "distance": 395,
           "time": 120,
           "cost": 1500,
           "travelMethod": "boat"
+        },
+        {
+          "destination": "Helsinki",
+          "distance": 395,
+          "time": 360,
+          "cost": 1000,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "Helsinki",
+          "distance": 395,
+          "time": 300,
+          "cost": 1200,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Helsinki",
+          "distance": 395,
+          "time": 60,
+          "cost": 2000,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "Helsinki",
+          "distance": 395,
+          "time": 420,
+          "cost": 800,
+          "travelMethod": "bus"
         },
         {
           "destination": "Berlin",
@@ -23,6 +72,27 @@
           "time": 90,
           "cost": 2500,
           "travelMethod": "plane"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 1100,
+          "time": 720,
+          "cost": 2000,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 1100,
+          "time": 540,
+          "cost": 1500,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 1100,
+          "time": 900,
+          "cost": 1000,
+          "travelMethod": "bus"
         }
       ]
     },
@@ -37,11 +107,60 @@
           "travelMethod": "car"
         },
         {
-          "destination": "Köpenhamn",
+          "destination": "Stockholm",
+          "distance": 550,
+          "time": 480,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Stockholm",
+          "distance": 525,
+          "time": 60,
+          "cost": 1500,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "Stockholm",
+          "distance": 525,
+          "time": 420,
+          "cost": 900,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Copenhagen",
           "distance": 600,
           "time": 420,
           "cost": 800,
           "travelMethod": "car"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 600,
+          "time": 480,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 600,
+          "time": 360,
+          "cost": 1000,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 600,
+          "time": 60,
+          "cost": 1500,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 600,
+          "time": 720,
+          "cost": 1200,
+          "travelMethod": "boat"
         }
       ]
     },
@@ -56,11 +175,53 @@
           "travelMethod": "plane"
         },
         {
-          "destination": "Köpenhamn",
+          "destination": "Stockholm",
+          "distance": 1100,
+          "time": 720,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Stockholm",
+          "distance": 1100,
+          "time": 600,
+          "cost": 700,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "Stockholm",
+          "distance": 1100,
+          "time": 420,
+          "cost": 1200,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Copenhagen",
           "distance": 400,
           "time": 60,
           "cost": 1000,
           "travelMethod": "plane"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 400,
+          "time": 300,
+          "cost": 200,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 400,
+          "time": 240,
+          "cost": 400,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "Copenhagen",
+          "distance": 400,
+          "time": 180,
+          "cost": 600,
+          "travelMethod": "train"
         },
         {
           "destination": "Paris",
@@ -68,11 +229,32 @@
           "time": 540,
           "cost": 2000,
           "travelMethod": "car"
+        },
+        {
+          "destination": "Paris",
+          "distance": 1050,
+          "time": 600,
+          "cost": 1000,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Paris",
+          "distance": 1050,
+          "time": 900,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Paris",
+          "distance": 1050,
+          "time": 90,
+          "cost": 2500,
+          "travelMethod": "plane"
         }
       ]
     },
     {
-      "name": "Köpenhamn",
+      "name": "Copenhagen",
       "connections": [
         {
           "destination": "Oslo",
@@ -80,6 +262,55 @@
           "time": 420,
           "cost": 800,
           "travelMethod": "car"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 600,
+          "time": 450,
+          "cost": 600,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 600,
+          "time": 720,
+          "cost": 300,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 600,
+          "time": 480,
+          "cost": 1000,
+          "travelMethod": "boat"
+        },
+        {
+          "destination": "Oslo",
+          "distance": 600,
+          "time": 60,
+          "cost": 1500,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 400,
+          "time": 420,
+          "cost": 600,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 400,
+          "time": 300,
+          "cost": 500,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 400,
+          "time": 480,
+          "cost": 200,
+          "travelMethod": "bus"
         },
         {
           "destination": "Berlin",
@@ -101,11 +332,60 @@
           "travelMethod": "car"
         },
         {
+          "destination": "Berlin",
+          "distance": 1050,
+          "time": 720,
+          "cost": 1500,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 1050,
+          "time": 960,
+          "cost": 500,
+          "travelMethod": "bus"
+        },
+        {
+          "destination": "Berlin",
+          "distance": 1050,
+          "time": 90,
+          "cost": 2500,
+          "travelMethod": "plane"
+        },
+        {
+          "destination": "London",
+          "distance": 340,
+          "time": 540,
+          "cost": 500,
+          "travelMethod": "car"
+        },
+        {
+          "destination": "London",
+          "distance": 340,
+          "time": 180,
+          "cost": 300,
+          "travelMethod": "train"
+        },
+        {
+          "destination": "London",
+          "distance": 340,
+          "time": 480,
+          "cost": 100,
+          "travelMethod": "bus"
+        },
+        {
           "destination": "London",
           "distance": 340,
           "time": 75,
           "cost": 1500,
           "travelMethod": "plane"
+        },
+        {
+          "destination": "London",
+          "distance": 340,
+          "time": 720,
+          "cost": 1200,
+          "travelMethod": "boat"
         }
       ]
     }

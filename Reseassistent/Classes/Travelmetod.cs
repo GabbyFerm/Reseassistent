@@ -12,6 +12,5 @@
 
         public string Buss { get; set; }
 
-
     }
 }

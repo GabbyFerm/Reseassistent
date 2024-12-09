@@ -1,10 +1,13 @@
-﻿namespace Reseassistent
+﻿using Newtonsoft.Json;
+using Reseassistent.Classes;
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        
     }
 }
