@@ -10,9 +10,5 @@
             Name = name;
         }
 
-        public void DepartureCity(TravelDB travelDB)
-        {
-           
-        }
     }
 }
