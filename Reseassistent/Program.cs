@@ -45,7 +45,7 @@ class Program
         switch (selectedCityName)
         {
             case "Stockholm":
-                Console.WriteLine(" You selected Stockholm. Here are the available routes:");
+                Console.WriteLine("You selected Stockholm. Here are the available routes:");
                 selectedCity.DisplayConnections();
                 break;
 
