@@ -23,22 +23,22 @@
 
         }
 
-        public void DisplayDetails()
-        {
-            var option = Transportation.FirstorDefault(option => option.TravelMetod.Equals(travelmetod, stringComparision.OrdinalIgnoreCase));
-            if (option != null)
-            {
-                Console.WriteLine($"Fordonsalternativ{option.TravelMetod}");
-                Console.WriteLine($"Distans: {option.Distance}");
-                Console.WriteLine($"Tid: {option.Time}");
-                Console.WriteLine($"Kostnad: {option.Cost}");
-            }
-            else
-            {
-                Console.WriteLine($"Ingen information tillgänglig.");
+        //public void DisplayDetails()
+        //{
+        //    var option = Transportation.FirstorDefault(option => option.TravelMetod.Equals(travelmetod, stringComparision.OrdinalIgnoreCase));
+        //    if (option != null)
+        //    {
+        //        Console.WriteLine($"Fordonsalternativ{option.TravelMetod}");
+        //        Console.WriteLine($"Distans: {option.Distance}");
+        //        Console.WriteLine($"Tid: {option.Time}");
+        //        Console.WriteLine($"Kostnad: {option.Cost}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"Ingen information tillgänglig.");
 
-            }
-        }
+        //    }
+        //}
       
 
         //public int TravelDistance()

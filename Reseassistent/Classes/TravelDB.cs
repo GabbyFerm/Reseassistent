@@ -6,34 +6,29 @@ namespace Reseassistent.Classes
 {
     public class TravelDB
     {
-        public List<TravelCity> Cities { get; set; }
+        public List<Cities> Cities { get; set; }
 
-        // Konstruktor för att ladda data från JSON-filen
         public TravelDB()
         {
             Cities = LoadCitiesFromJson();
         }
 
-        // Metod för att läsa och deserialisera JSON-filen
-        private List<TravelCity> LoadCitiesFromJson()
+        private List<Cities> LoadCitiesFromJson()
         {
             try
             {
-                // Ange sökvägen till JSON-filen
-                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Json", "travel_data.json");
+                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Json", "cities.json");
 
-                // Läs filen och deserialisera den till en lista av TravelCity
                 string json = File.ReadAllText(filePath);
-                var travelData = JsonConvert.DeserializeObject<Dictionary<string, List<TravelCity>>>(json);
+                var travelData = JsonConvert.DeserializeObject<List<Cities>>(json);
 
-                return travelData["cities"];
+                return travelData;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Fel vid inläsning av JSON-fil: {ex.Message}");
-                return new List<TravelCity>();
+                return new List<Cities>();
             }
         }
-
     }
 }
