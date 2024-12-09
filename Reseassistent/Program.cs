@@ -1,9 +1,4 @@
-﻿using Newtonsoft.Json;
-using Reseassistent.Classes;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
+﻿using Reseassistent.Classes;
 
 class Program
 {
@@ -11,14 +6,10 @@ class Program
     {
         TravelDB travelDB = new TravelDB();
 
-        // Nu har travelDB.Cities listan av städer från JSON
-        Console.WriteLine("Data inläst från cities.json.");
-        Console.WriteLine($"Antal städer: {travelDB.Cities.Count}");
-
         Console.WriteLine("Hi, welcome to your travel assitant!");
         Console.WriteLine("Please pick where you want to departure from: ");
 
-        List<string> departureCities = Cities.GetDepartureCities(travelDB.Cities);
+        List<string> departureCities = Cities.GetDepartureCities(travelDB);
         for (int i = 0; i < departureCities.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {departureCities[i]}");
@@ -77,5 +68,4 @@ class Program
         Console.WriteLine("\n Thank you for using the Travel Assistant. Have a great trip! ✈️");
     }
 }
-    }
-}
+
