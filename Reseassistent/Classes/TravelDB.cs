@@ -18,11 +18,11 @@ namespace Reseassistent.Classes
             try
             {
                 string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Json", "cities.json");
-
                 string json = File.ReadAllText(filePath);
-                var travelData = JsonConvert.DeserializeObject<List<Cities>>(json);
 
-                return travelData;
+                var travelData = JsonConvert.DeserializeObject<TravelData>(json); // Deserialisera till TravelData-objekt
+
+                return travelData?.Cities ?? new List<Cities>(); // Returnera Cities-listan eller en tom lista om det är null
             }
             catch (Exception ex)
             {
